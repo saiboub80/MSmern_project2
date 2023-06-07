@@ -2,16 +2,35 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios';
-export default function Login(){
-    const [values, setValues] = useState ({
-        
-        username:"",
-        password:"",
-    });
-    const loginUser = (e) => {
-        e.preventDefault()
-        axios.get('/')
-    }
+import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+
+
+    export default function Login(){
+        const navigate = useNavigate()
+        const [values, setValues] = useState ({
+            username:"",
+            password:"",
+        });
+        const loginUser = async (e) => {
+            e.preventDefault()
+            const {username, password} = values
+            try{
+                const{data:values} = await axios.post('/login',{
+                    username,
+                    password
+                })
+                if(values.error){
+                    toast.error(values.error)
+                }else{
+                    setValues({})
+                    toast.success(`Login Successful, Welcome ${values.name}`)
+                    navigate('/')
+                }
+            }catch(error){
+    
+            }
+        }
     return(
         <div className='container'>
         <div className='app-wrapper'>

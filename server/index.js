@@ -3,7 +3,9 @@ require('dotenv').config()
 const cors = require('cors')
 const app = express();
 const { mongoose } = require('mongoose')
-const {registerUser} = require('./controllers/userscontroller')
+const {registerUser, loginUser} = require('./controllers/userscontroller')
+const cookieParser = require('cookie-parser')
+
 
 //const UserModel = require('./Models/users');
 //database connection
@@ -19,7 +21,7 @@ app.use('/', require('./routes/userRoutes'));
 
 
 app.post('/', registerUser)
-
+app.post('/', loginUser)
 //app.listen(process.env.PORT)
 
 

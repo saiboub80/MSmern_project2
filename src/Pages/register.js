@@ -18,8 +18,8 @@ export default function Register() {
     e.preventDefault();
     const {name, age, username, email, password} = values
     try {
-      const {values} = await axios.post('/register', {
-        //send palyload
+      const {data:values} = await axios.post('/register', {
+        //send payload
           name, age, username, email, password
       })
       if(values.error){
