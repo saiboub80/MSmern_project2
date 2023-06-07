@@ -2,6 +2,7 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
+
 const navigation = [
   { name: 'Home', href: '/', current: true  },
   { name: 'Sign Up', href: '/register', current: false },
@@ -17,7 +18,7 @@ function Navbar() {
     <Disclosure as="nav" className="bg-purple-800">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="w-full px-2 sm:px-6 lg:px-1/4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                {/* Mobile menu button*/} 
@@ -35,13 +36,13 @@ function Navbar() {
                   <img
                     className="block h-8 w-auto lg:hidden"
                     src=""
-                    alt="Your Company"
+                    alt=""
                   />
-                  <img
+                  {/* <img
                     className="hidden h-8 w-auto lg:block"
-                    src=""
+                    src="tiger"
                     alt="Your Company"
-                  />
+                  /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -77,7 +78,7 @@ function Navbar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src=""
+                        src="./images/welcome.png"
                         alt=""
                       />
                     </Menu.Button>

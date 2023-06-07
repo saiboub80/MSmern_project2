@@ -5,11 +5,12 @@
 
 .container{
   background: linear-gradient(135deg, #0062ff, red);
-  width: 300vh;
+  width: 100px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: fit-content;
 }
 
 .app-wrapper{
