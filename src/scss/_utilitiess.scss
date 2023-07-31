@@ -1,0 +1,19 @@
+.title {
+    color: $whiteColor;
+    text-align: center;
+    margin: set-margins(80px, 0px, 40px, 0px);
+  }
+  
+  .Name,
+  .Age,
+  .Email,
+  .password {
+    margin: $margin;
+    color: $color;
+    font-size: $fontSize;
+  }
+  
+  .password {
+    margin-bottom: 40px;
+  }
+  

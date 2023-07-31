@@ -1,0 +1,36 @@
+.container {
+    @include flex-center;
+    background: linear-gradient(135deg, $primaryColor, $secondaryColor);
+    width: 100px;
+    min-height: 100vh;
+    max-width: fit-content;
+  }
+  
+  .app-wrapper {
+    background-color: $backgroundColor;
+    min-width: 500px;
+    min-height: 750px;
+    padding: $padding;
+    box-sizing: border-box;
+    border-radius: $borderRadius;
+  }
+  
+  input {
+    height: 32px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: 2px solid $blackColor;
+    margin-bottom: 10px;
+  }
+  
+  .form-success {
+    @include flex-center;
+    margin-top: 250px;
+    min-width: 370px;
+    color: $primaryColor;
+  }
+  

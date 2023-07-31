@@ -1,7 +1,7 @@
 import React from "react"
 //import SignupForm from "./Components/SignupForm"; 
 //import Form from "./Components/Form";
-import "./App.css";
+import "../src/css/App.css";
 import {Routes, Route} from 'react-router-dom'
 import Register from "./Pages/register";
 import axios from 'axios'

@@ -1,0 +1,8 @@
+@function set-margins($top, $right, $bottom, $left) {
+    @return $top $right $bottom $left;
+  }
+  
+  @function set-padding($top, $right, $bottom, $left) {
+    @return $top $right $bottom $left;
+  }
+  

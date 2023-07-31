@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+}
+
+.Name,
+.Age,
+.Email,
+.password {
+  margin: 20px;
+  color: #969292;
+  font-size: 16px;
+}
+
+.password {
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0062ff, red);
+  width: 100px;
+  min-height: 100vh;
+  max-width: fit-content;
+}
+
+.app-wrapper {
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 500px;
+  min-height: 750px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+input {
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2px solid rgb(2, 2, 2);
+  margin-bottom: 10px;
+}
+
+.form-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  min-width: 370px;
+  color: #0062ff;
+}
+
+/*# sourceMappingURL=App.css.map */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
